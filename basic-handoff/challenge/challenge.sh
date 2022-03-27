@@ -3,6 +3,7 @@
 echo "$FLAG" > /var/www/html/flag.html
 /usr/sbin/apache2ctl -k start
 echo "Please navigate to http://$SERVICE_HOST:$SERVICE_PORT/ in your favorite browser."
+# echo "Please navigate to http://$CHAL_HOST:$CHAL_PORT/ in your favorite browser."
 if [ -z $TIMEOUT ]; then
     echo "You have 60 seconds."
     sleep 60
