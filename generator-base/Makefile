@@ -1,3 +1,5 @@
+build: base
+
 .PHONY: base
 base:
 	docker build . -t generator-base:debug

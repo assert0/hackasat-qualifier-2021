@@ -11,7 +11,10 @@ DEMO_TICKET ?= ticket{papa962762quebec2:GLro_I0dHUpkzoTRBhL3nUSjTn5yoIwfe8AzhBHs
 
 COPY_FILE_CHALLENGE = cp challenge/packetbug.cpp static/.
 
-build: challenge solver generator static 
+# build: challenge solver generator static 
+.PHONY: build
+build:
+	@echo "Disabled"
 
 .PHONY:challenge
 challenge:

@@ -12,6 +12,8 @@ FLAG ?= flag{zulu49225delta\:GG1EnNVMK3-hPvlNKAdEJxcujvp9WK4rEchuEdlDp3yv_Wh_uvB
 .PHONY: challenge solver generator test
 all : challenge solver generator static
 
+build : challenge solver generator static
+
 challenge:
 	docker build -f challenge/Dockerfile challenge -t ${CHAL_NAME}:challenge
 solver:

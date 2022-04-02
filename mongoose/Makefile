@@ -11,6 +11,8 @@ TICKET ?= ticket{zulu10571quebec:GKP9suZz2eyyEpgOpgn1fvN67EpR2MYxvtrAdVfdUtPjBA1
 .PHONY: challenge solver test
 all : challenge solver 
 
+build : challenge solver
+
 challenge:
 	docker build -f challenge/Dockerfile challenge -t ${CHAL_NAME}:challenge
 solver:

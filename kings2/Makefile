@@ -12,6 +12,8 @@ DEMO_TICKET ?= ticket{golf590153sierra2:GBaFdAmSqDWupUPz5sTZVVNN43uwGvkVH-mu1CAy
 .PHONY: challenge solver test
 all : challenge solver generator
 
+build : challenge solver generator
+
 challenge:
 	docker build -f challenge/Dockerfile challenge -t ${CHAL_NAME}:challenge
 solver:

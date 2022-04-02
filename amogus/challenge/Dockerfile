@@ -27,8 +27,8 @@ RUN dpkg --add-architecture i386 && \
 
 # Download and save libc2.27
 WORKDIR /tmp
-RUN wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/libc6_2.27-3ubuntu1.2_amd64.deb && \
-    dpkg --extract libc6_2.27-3ubuntu1.2_amd64.deb libc6_2.27
+RUN wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/libc6_2.27-3ubuntu1.5_amd64.deb && \
+    dpkg --extract libc6_2.27-3ubuntu1.5_amd64.deb libc6_2.27
 
 ENV GLIBC_227_64=/glibc/2.27/64
 WORKDIR ${GLIBC_227_64}
